@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+
+body {
+    background: #fff;
+}
+
+/* Header */
+
+div.header {
+    background: #30336b;
+    width: 100%;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content */
+
+/* Customer Input */
+
+div.user-input {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.user-input .customer-input {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+div.user-input .customer-input label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #30336b;
+}
+
+div.user-input .customer-input input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    border-radius: 2px;
+}
+
+div.user-input #button-search {
+    margin-bottom: 5px;
+    height: 25px;
+    border: none;
+    background: none;
+    background: #30336b;
+    border: 2px solid #30336b;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+div.user-input #button-search:hover {
+    background: none;
+    color: black;
+}
+
+/* Exibir Repositorios */
+
+div.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.container .bar {
+    background: rgb(230, 230, 230);
+    width: 95%;
+    margin-top: 10px;
+    border-bottom: 2px solid #30336b;
+    display: none;
+}
+
+div.container .bar .bar-content {
+    margin: 5px;
+}
+
+div.container .bar .bar-content .repository-name {
+    margin-bottom: 5px;
+}
+
+div.container .bar .bar-content .repository-link {
+    margin-top: 5px;
+}
+
+/* AEE POHAAA */
+
+@media (min-width: 320px) {
+    div.user-input #button-search {
+        width: 49%;
+    }
+}
+
+@media (min-width: 375px) {
+    div.user-input #button-search {
+        width: 41%;
+    }
+}
+
+@media (min-width: 425px) {
+    div.user-input #button-search {
+        width: 36%;
+    }
+}
+
+@media (min-width: 768px) {
+    div.user-input #button-search {
+        width: 20%;
+    }
+
+    div.container .bar {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    div.user-input #button-search {
+        width: 15%;
+    }
+
+    div.container .bar {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1440px) {
+    div.user-input #button-search {
+        width: 9.8%;
+    }
+
+    div.container .bar {
+        width: 40%;
+    }
+}
+
+@media (min-width: 2560px) {
+    div.user-input #button-search {
+        width: 5%;
+    }
+
+    div.container .bar {
+        width: 25%;
+    }
+}
+
